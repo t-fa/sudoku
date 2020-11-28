@@ -4,7 +4,7 @@ import React, {useState} from 'react'
 import Start from './components/Start'
 import Board from './components/Board'
 
-function App() {
+const App = () => {
   const [gameStart, setGameStart] = useState(true);
 
   const startGame = () => {
@@ -17,7 +17,7 @@ function App() {
       {gameStart ?
       <Board />
       :
-      <Start size={boardSize} setSize={setBoardSize} setStart={startGame}/>}
+      <Start setStart={startGame}/>}
     </div>
   )
 }
