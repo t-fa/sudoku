@@ -1,22 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Input = styled.input`
+const Number = styled.div`
+    border: 1px solid black;
     width: 50px;
     height: 50px;
-    border: 1px solid black;
-`;
-
-const Number = styled.input`
-    width: 50px;
-    height: 50px;
-    border: 1px solid black;
 `
 
 const Square = (props) => {
-    {props.inputSquare ?
-        <Input />
-    :   <Number />}
+    return <Number>{props.number}</Number>
 }
 
 export default Square;
