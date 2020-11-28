@@ -10,23 +10,107 @@ const Row = styled.div`
 
 const Board = (props) => {
 
-    // for(let i=0; i < props.size; i++){
-
-    // }
 
     return(
         <>
             <Row>
                 <Square number="1"/>
                 <Square number="2"/>
+                <Square number="3" right/>
+                <Square number="1"/>
+                <Square number="2"/>
+                <Square number="3" right/>
+                <Square number="1"/>
+                <Square number="2"/>
                 <Square number="3"/>
-                <Square number="4"/>
             </Row>
             <Row>
                 <Square number="1"/>
                 <Square number="2"/>
+                <Square number="3" right/>
+                <Square number="1"/>
+                <Square number="2"/>
+                <Square number="3" right/>
+                <Square number="1"/>
+                <Square number="2"/>
                 <Square number="3"/>
-                <Square number="4"/>
+            </Row>
+            <Row>
+                <Square number="1" bottom/>
+                <Square number="2" bottom/>
+                <Square number="3" right bottom/>
+                <Square number="1" bottom/>
+                <Square number="2" bottom/>
+                <Square number="3" right bottom/>
+                <Square number="1" bottom/>
+                <Square number="2" bottom/>
+                <Square number="3" bottom/>
+            </Row>
+            <Row>
+                <Square number="1"/>
+                <Square number="2"/>
+                <Square number="3" right/>
+                <Square number="1"/>
+                <Square number="2"/>
+                <Square number="3" right/>
+                <Square number="1"/>
+                <Square number="2"/>
+                <Square number="3"/>
+            </Row>
+            <Row>
+                <Square number="1"/>
+                <Square number="2"/>
+                <Square number="3" right/>
+                <Square number="1"/>
+                <Square number="2"/>
+                <Square number="3" right/>
+                <Square number="1"/>
+                <Square number="2"/>
+                <Square number="3"/>
+            </Row>
+            <Row>
+                <Square number="1" bottom/>
+                <Square number="2" bottom/>
+                <Square number="3" right bottom/>
+                <Square number="1" bottom/>
+                <Square number="2" bottom/>
+                <Square number="3" right bottom/>
+                <Square number="1" bottom/>
+                <Square number="2" bottom/>
+                <Square number="3" bottom/>
+            </Row>
+            <Row>
+                <Square number="1"/>
+                <Square number="2"/>
+                <Square number="3" right/>
+                <Square number="1"/>
+                <Square number="2"/>
+                <Square number="3" right/>
+                <Square number="1"/>
+                <Square number="2"/>
+                <Square number="3"/>
+            </Row>
+            <Row>
+                <Square number="1"/>
+                <Square number="2"/>
+                <Square number="3" right/>
+                <Square number="1"/>
+                <Square number="2"/>
+                <Square number="3" right/>
+                <Square number="1"/>
+                <Square number="2"/>
+                <Square number="3"/>
+            </Row>
+            <Row>
+                <Square number="1"/>
+                <Square number="2"/>
+                <Square number="3" right/>
+                <Square number="1"/>
+                <Square number="2"/>
+                <Square number="3" right/>
+                <Square number="1"/>
+                <Square number="2"/>
+                <Square number="3"/>
             </Row>
         </>
     )

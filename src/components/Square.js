@@ -2,13 +2,19 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Number = styled.div`
-    border: 1px solid black;
+    border-bottom: ${(props) => (props.bottom ? '3px solid black' : '1px solid black')};
+    border-right: ${(props) => (props.right ? '3px solid black' : '1px solid black')};
+    border-left: 1px solid black;
+    border-top: 1px solid black;
     width: 50px;
     height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 
 const Square = (props) => {
-    return <Number>{props.number}</Number>
+    return <Number right={props.right} bottom={props.bottom}>{props.number}</Number>
 }
 
 export default Square;

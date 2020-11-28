@@ -6,7 +6,6 @@ import Board from './components/Board'
 
 function App() {
   const [gameStart, setGameStart] = useState(true);
-  const [boardSize, setBoardSize] = useState();
 
   const startGame = () => {
     setGameStart(true)
@@ -16,7 +15,7 @@ function App() {
     <div className="App">
       <h1>Sudoku</h1>
       {gameStart ?
-      <Board size={boardSize}/>
+      <Board />
       :
       <Start size={boardSize} setSize={setBoardSize} setStart={startGame}/>}
     </div>
