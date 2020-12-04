@@ -12,10 +12,16 @@ const Number = styled.div`
     justify-content: center;
     align-items: center;
     background-color: ${(props) => (props.highlight ? 'beige' : 'white')};
+    font-weight: ${(props) => (props.starter ? 'bolder' : 'normal')};
 `
 
 const Square = (props) => {
-    return <Number right={props.right} bottom={props.bottom} highlight={props.highlight}>{props.number}</Number>
+    return <Number 
+    right={props.right} 
+    bottom={props.bottom} 
+    highlight={props.highlight}
+    starter={props.starter}
+    >{props.number}</Number>
 }
 
 export default Square;
